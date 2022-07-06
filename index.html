@@ -65,7 +65,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-btn" type="button">Заказать услугу</button>
+          <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
         >
       </section>
@@ -128,12 +128,21 @@
           <ul class="working-list ul">
             <li class="work__img">
               <img src="./images/box_1.jpg" alt="working" width="370" height="294" />
+              <div class="img__box">
+              <p class="text">Десктопные приложения</p>
+            </div>
             </li>
             <li class="work__img">
               <img src="./images/box_2.jpg" alt="working" width="370" height="294" />
+              <div class="img__box">
+              <p class="text">Мобильные приложения</p>
+            </div>
             </li>
             <li class="work__img">
               <img src="./images/box_3.jpg" alt="working" width="370" height="294" />
+              <div class="img__box">
+              <p class="text">Дизайнерские решения</p>
+            </div>
             </li>
           </ul>
         </div>
@@ -397,6 +406,16 @@
           </ul>
         </div>
       </div>
-    </footer>
+    </footer> 
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__close__btn" type="button" data-modal-close>
+          <svg width="18px" height="18px">
+            <use href="./images/svg/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
